@@ -5,10 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
         <title>Panier</title>
+        <style>
+            h1 {
+                text-align: center;
+                color: blue;
+            }
+            h2 {
+                text-align: center;
+                color: blue;
+            }
+            tr {
+                text-align: center;
+                color: blue;
+            }
+            body {
+                background-image: url("unnamed.jpg"); 
+                background-color: #cccccc; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover; 
+            }
+        </style>
     </head>
     <body>
             <h1>Votre panier</h1>
-            <tr><th>Article </th><th>Prix </th><th>Quantité </th></tr>
+            <h2><tr>Article </tr><tr>Prix </tr><tr>Quantité </tr></h2>
             <h2>Prix total : <pan class='product.quantity.value*product.price'></span>€</h2>
 
             <button onclick="window.location.href = 'https://www.amazon.fr/';" id="passer la commande">Passer la commande</button>
