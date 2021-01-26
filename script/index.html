@@ -3,59 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style/style.css" rel="stylesheet">
+        <link href="C:/Users/jules/Documents/GitHub/Projet_IHM/style/style.css" rel="stylesheet">
         <title >Fédération Française du Pique-Nique</title>
-        <style>
-            body {
-                font-family: 'Calibri', sans-serif;
-            }
-            h1 {
-                text-align: center;
-                color: blue;
-            }
-            h2 {
-                text-align: center;
-                color: blue;
-            }
-            body {
-                background-image: url("pattern_fond.jpg"); 
-                background-color: #cccccc; 
-                height: 500px; 
-                background-position: center; 
-                background-repeat: repeat; 
-                background-size: cover; 
-            }
-            figure {
-                background-color: rgb(154, 205, 50, 0.6);
-                width: min-content;
-                margin-left: auto;
-                margin-right: auto;                
-            }
-            fieldset {
-                background-color: rgb(0, 128, 0, 0.6);
-            }
-            img {
-                width: min-content;
-                margin-right: auto;
-                margin-left: auto;
-            }
-            .container {
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-
-            }
-            #button1 {
-                text-align: left;
-            }
-            #button2 {
-                text-align: right;
-            }
-            .containerimg {
-                text-align: center;
-            }
-        </style>
-        
     </head>
     <body>
         <fieldset>
@@ -64,11 +13,14 @@
             <h2>Votre compagnion pour vos balade en extérieur</h2>
             
             <div class="container">
-                <button id="button2" type="button">
+                <button id="button2" type="button" onclick="window.location.href='panier.html'">
                     Mon panier
                 </button>
-                <button id="button1" type="button">
+                <button id="button1" type="button" onclick="window.location.href='login.html'">
                     Se connecter
+                </button>
+                <button id="button3" type="button" onclick="window.location.href='login.html'">
+                    Mise en page adaptée
                 </button>
             </div>
 
@@ -81,7 +33,7 @@
                 alt="Kit complet pour un parfait pique nique">
             <div class="containerimg">
                 <figcaption>Kit complet pour un parfait pique nique</figcaption>
-                <button type="button">
+                <button type="button" onclick="window.location.href='panier.html'">
                     Ajouter au panier
                 </button>
             </div>
@@ -91,8 +43,8 @@
                 alt="Panier repas gourmand et régional">
             <div class="containerimg">
                 <figcaption>Panier repas gourmand et régional</figcaption>
-                <button type="button">
-                Ajouter au panier
+                <button type="button" onclick="window.location.href='panier.html'">
+                    Ajouter au panier
                 </button>
             </div>
         </figure>
