@@ -1,5 +1,11 @@
 body {
     font-family: 'Calibri', sans-serif;
+    background-image: url("pattern_fond.jpg"); 
+    background-color: #cccccc; 
+    height: 500px; 
+    background-position: center; 
+    background-repeat: repeat; 
+    background-size: cover; 
 }
 h1 {
     text-align: center;
@@ -9,14 +15,6 @@ h2 {
     text-align: center;
     color: blue;
 }
-body {
-    background-image: url("pattern_fond.jpg"); 
-    background-color: #cccccc; 
-    height: 500px; 
-    background-position: center; 
-    background-repeat: repeat; 
-    background-size: cover; 
-}
 figure {
     background-color: rgb(154, 205, 50, 0.6);
     width: min-content;
@@ -25,6 +23,7 @@ figure {
 }
 fieldset {
     background-color: rgb(0, 128, 0, 0.6);
+    font-size: x-large;
 }
 img {
     width: min-content;
@@ -38,10 +37,10 @@ img {
 }
 .containerimg {
     text-align: center;
+    font-size: x-large;
 }
-button {
-    font-size: 32;
+.button {
+    font-size: x-large;
 }
-figcaption {
-    font-size: 32;
-}
+
+
