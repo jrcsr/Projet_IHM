@@ -4,8 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style/style.css" rel="stylesheet">
-        <title>Fédération Française du Pique-Nique</title>
+        <title >Fédération Française du Pique-Nique</title>
         <style>
+            body {
+                font-family: 'Calibri', sans-serif;
+            }
             h1 {
                 text-align: center;
                 color: blue;
@@ -15,38 +18,68 @@
                 color: blue;
             }
             body {
-                background-image: url("unnamed.jpg"); 
+                background-image: url("pattern_fond.jpg"); 
                 background-color: #cccccc; 
                 height: 500px; 
                 background-position: center; 
-                background-repeat: no-repeat; 
+                background-repeat: repeat; 
                 background-size: cover; 
             }
             figure {
                 text-align: center;
+                background-color: rgb(154, 205, 50, 0.6);
+            }
+            fieldset {
+                background-color: rgb(0, 128, 0, 0.6);
+            }
+            img {
+                margin: 0%;
+            }
+            .container {
+                text-align: center;
+
+            }
+            #button1 {
+                text-align: left;
+            }
+            #button2 {
+                text-align: right;
             }
         </style>
         
     </head>
     <body>
         <fieldset>
-                <h1>Fédération Française du Pique-Nique</h1>
-                <h2>Votre compagnion pour vos balade en extérieur</h2>
+            
+            <h1>Fédération Française du Pique-Nique</h1>
+            <h2>Votre compagnion pour vos balade en extérieur</h2>
+            
+            <div class="container">
+                <button id="button2" type="button">
+                    Mon panier
+                </button>
+                <button id="button1" type="button">
+                    Se connecter
+                </button>
+            </div>
+
+            
 
                 
         </fieldset>
         <figure>
-            <img src="unnamed.jpg"
-                 alt="Jolie pique-nique en forêt">
-            <figcaption>An elephant at sunset</figcaption>
+            <img src="kit_pique_nique.jpg"
+                 alt="Kit complet pour un parfait pique nique">
+            <figcaption>Kit complet pour un parfait pique nique</figcaption>
             <button type="button">
                 Add to favorites
             </button>
+            
         </figure>
         <figure>
-            <img src="unnamed.jpg"
-                 alt="Jolie pique-nique en forêt">
-            <figcaption>An elephant at sunset</figcaption>
+            <img src="panier_repas_gourmand.jpg"
+                 alt="Panier repas gourmand et régional">
+            <figcaption>Panier repas gourmand et régional</figcaption>
             <button type="button">
                 Add to favorites
             </button>
