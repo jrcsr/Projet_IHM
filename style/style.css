@@ -4,6 +4,7 @@ body {
 h1 {
     text-align: center;
     color: blue;
+    font-size: 50pt;
 }
 h2 {
     text-align: center;
@@ -19,7 +20,7 @@ body {
 }
 figure {
     background-color: rgb(154, 205, 50, 0.6);
-    width: min-content;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;                
 }

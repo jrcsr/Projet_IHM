@@ -10,20 +10,22 @@ body {
 h1 {
     text-align: center;
     color: blue;
+    font-size: 50pt;
 }
 h2 {
     text-align: center;
     color: blue;
+    font-size: 25pt;
 }
 figure {
     background-color: rgb(154, 205, 50, 0.6);
-    width: min-content;
+    width:fit-content;
     margin-left: auto;
-    margin-right: auto;                
+    margin-right: auto;  
+                 
 }
 fieldset {
     background-color: rgb(0, 128, 0, 0.6);
-    font-size: x-large;
 }
 img {
     width: min-content;
