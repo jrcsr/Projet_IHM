@@ -22,19 +22,28 @@
                 position:relative;
                 left:45%;
             }
+            label {
+                display: block;
+                font: 1rem 'Fira Sans', sans-serif;
+                text-align: center;
+                color: white;
+            }
             body {
                 background-image: url("vin-pique-nique.jpg"); 
                 background-color: #cccccc; 
                 background-position: center;
                 height: 575px;
                 background-repeat: no-repeat; 
-                background-size: 100%; 
+                background-size: 100%;
             }
         </style>
     </head>
     <body>
             <h1>Mon panier</h1>
             <h2><tr>Article </tr><tr>Prix </tr><tr>Quantité </tr></h2>
+            <label for="product">Nombre de produit (0-100):</label>
+            <input type="number" id="product" name="product"
+            min="0" max="100">
             <h2>Prix total : <pan class='product.quantity.value*product.price.value'></span>€</h2>
 
             <button onclick="window.location.href = 'https://www.amazon.fr/';" id="passer la commande">Passer la commande</button>
