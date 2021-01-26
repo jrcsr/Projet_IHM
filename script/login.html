@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="UTF-8">
+    <title>FFPN | Log In</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<style>
+    legend {
+        text-align: center;
+        color: rgb(6, 6, 53);
+    }
+  
+    body {
+        background-image: url("vin-pique-nique.jpg"); 
+        background-color: #cccccc; 
+        height: 500px; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+</style>
+
+<body>
+    
+    <fieldset>
+        <legend>FFPN, La fédération française de pique-nique.</legend>
+        <legend> </legend>
+        <legend>Inscrivez vous:</legend>
+        <legend> </legend>
+        <form onsubmit="new FormData(this); return false;">
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="votre email"/>
+        <label for="password">Mot de passe:</label>
+
+        <input id="password" type="password" name="password"/>
+        <input type="submit" value="Enregistrer"/>
+
+        </form>
+    </fieldset>
+
+</body>
