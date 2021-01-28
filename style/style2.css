@@ -18,6 +18,8 @@ h2 {
     font-size: 25pt;
 }
 figure {
+    display:inline-block;
+    justify-content: space-around;
     background-color: rgb(154, 205, 50, 0.6);
     width:fit-content;
     margin-left: auto;
@@ -41,8 +43,15 @@ img {
     text-align: center;
     font-size: x-large;
 }
-.button {
+.text {
     font-size: x-large;
+}
+.button:active {
+    background-color: green;
+}
+p {
+    border: 1px solid black;
+    text-align: center;
 }
 
 

@@ -1,6 +1,3 @@
-body {
-    font-family: 'Calibri', sans-serif;
-}
 h1 {
     text-align: center;
     color: blue;
@@ -11,6 +8,7 @@ h2 {
     color: blue;
 }
 body {
+    font-family: 'Calibri', sans-serif;
     background-image: url("pattern_fond.jpg"); 
     background-color: #cccccc; 
     height: 500px; 
@@ -19,6 +17,8 @@ body {
     background-size: cover; 
 }
 figure {
+    display: inline-block;
+    justify-content: space-around;
     background-color: rgb(154, 205, 50, 0.6);
     width: fit-content;
     margin-left: auto;
@@ -47,3 +47,10 @@ img {
 .containerimg {
     text-align: center;
 }
+.text:active {
+    background-color: green;
+}
+p {
+    border: 1px solid black;
+}
+
