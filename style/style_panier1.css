@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+tr {
+    text-align: center;
+    color: white;
+}
+button {
+    position:relative;
+    left:45%;
+}
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+body {
+    background-image: url("vin-pique-nique.jpg"); 
+    background-color: #cccccc; 
+    background-position: center;
+    height: 575px;
+    background-repeat: no-repeat; 
+    background-size: 100%;
+}
