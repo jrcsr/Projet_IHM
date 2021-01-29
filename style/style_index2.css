@@ -75,6 +75,22 @@ nav {
 .intro {
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #fdc200;
+    -webkit-text-stroke: 1px red;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeff00, 0 0 20px #eeff00, 0 0 30px #eeff00, 0 0 40px #eeff00, 
+                   0 0 50px #7cda30, 0 0 60px #7cda30, 0 0 70px#7cda30;
+    }
+    to {
+      text-shadow: 0 0 20px #eeff00, 0 0 30px #eeff00, 0 0 40px #eeff00, 0 0 50px #eeff00,
+                   0 0 60px #097c13, 0 0 70px #097c13, 0 0 80px #097c13;
+    }
 }
 
 
