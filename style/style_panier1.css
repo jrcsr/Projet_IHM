@@ -21,10 +21,14 @@ label {
     color: white;
 }
 body {
-    background-image: url("vin-pique-nique.jpg"); 
-    background-color: #cccccc; 
-    background-position: center;
-    height: 575px;
-    background-repeat: no-repeat; 
-    background-size: 100%;
+    height:205px;
+    width: 100%; /* fall back */
+    width: 100vw;
+    background-position:left top;
+    background-image:url(vin-pique-nique.jpg);
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 }
