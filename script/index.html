@@ -48,9 +48,9 @@
             </ul>
         </nav>
         <section>
-            <div class="intro">
+            <article class="intro">
                 <b>La FFPN vous permet de profiter de vos piques-niques le mieux possible. Tous nos produits sont de qualité et les panier repas à thème sont composés de produits du terroir et provenant de production en circuit court</b>
-            </div>
+            </article>
         
             <div class="produits">
                 <figure>
@@ -143,5 +143,9 @@
     <script>
         import {MDCRipple} from '@material/ripple';
         const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));  
+        
+        import {MDCTopAppBar} from '@material/top-app-bar';
+        const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+        const topAppBar = new MDCTopAppBar(topAppBarElement);
     </script>
 </html>
