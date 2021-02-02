@@ -65,3 +65,10 @@ div{
     display: block;
     margin: auto;
 }
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 80, 22,0.4);
+}
