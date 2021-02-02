@@ -10,10 +10,17 @@ h1 {
 }
 h2 {
     margin: auto;
-    color: #000000;
+    color: #ffffff;
     background-color: rgb(200,173,22, 0.6);
     border-radius: 5px;
     text-align: center;
+
+}
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
 }
 tr {
     text-align: center;
@@ -44,6 +51,12 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.containerimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22pt;
 }
 button {
     font-size: x-large;
@@ -80,4 +93,12 @@ fieldset {
 }
 .mdc-button__label.mdc-button__label {
     font-size: x-large;
+}
+figcaption {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background-color: rgb(250, 128, 114, 0.4); 
+    height: fit-content;
+    width: fit-content;  
+    border-radius: 4px;
 }

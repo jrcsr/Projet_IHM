@@ -1,6 +1,29 @@
-legend {
-    text-align: center;
-    color: rgb(0, 0, 0);
+
+body {
+    font-family: 'Calibri',sans-serif ;
+    height:205px;
+    width: 100%; /* fall back */
+    width: 100vw;
+    background-position:left top;
+    background-image:url(fond.png);
+    background-repeat:repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+h1 {
+    margin: auto;
+    color: rgb(200,173,22);
+    font-size: 50pt;
+    -webkit-text-stroke: 1px rgb(93,57,39);
+}
+h2 {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    background-color: rgb(200,173,22, 0.6);
+    border-radius: 5px;
+    font-size: x-large;
 }
 form {
     text-align: center;
@@ -18,49 +41,18 @@ form {
     margin-top: 15px;
 
 }
-h1 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0%;
-    font-size: 20pt;
-}
-body {
-    font-family: 'Calibri',sans-serif ;
-    font-size: x-large;
-    height:205px;
-    width: 100%; /* fall back */
-    width: 100vw;
-    background-position:left top;
-    background-image:url(vin-pique-nique.jpg);
-    background-repeat:repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-}
+
 fieldset {
-    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 80, 22,0.4);
 }
-legend {
-    font-size: 27pt;
-}
+
 .panier {
     text-align: center;
     margin-top: 15px;
-}
-.zoom {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-span {
-    max-width: 200px;
-    margin-top: 10px;
-    margin-bottom: 0%;
-    font-size: 25pt;
-    border-radius: 10px;
-    background-color: rgb(84,132,59, 0.6);
-
 }
 button {
     font-size: x-large;
@@ -68,8 +60,35 @@ button {
 label {
     border-radius: 10px;
     background-color: rgb(84,132,59, 0.6);
+    font-size: x-large;
 }
 .text {
     text-align: center;
+}
+.mdc-button--raised.mdc-button--raised {
+
+    width: fit-content;
+}
+* {
+    --mdc-theme-primary: #51b364;
+    --mdc-theme-on-primary: #ffffff;
+}
+.mdc-button__label.mdc-button__label {
+    font-size: x-large;
+}
+.zoom {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+input {
+    font-size: x-large;
+}
+.int {
+    border-radius: 10px;
+    background-color: rgb(84,132,59, 0.6);
+    font-size: x-large;
 }
 

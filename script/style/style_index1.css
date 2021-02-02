@@ -1,24 +1,3 @@
-@import "@material/button";
-@include button.core-styles;
-@import "@material/icon-button";
-@import "@material/top-app-bar/mdc-top-app-bar";
-
-
-@include icon-button.core-styles;
-
-
-h1 {
-    margin: auto;
-    color: #c5a716;
-    font-size: 50pt;
-    -webkit-text-stroke: 1px #5d3927;
-}
-h2 {
-    margin: auto;
-    color: #ffffff;
-    background-color: rgb(200,173,22, 0.6);
-    border-radius: 5px;
-}
 body {
     font-family: 'Calibri', sans-serif;
     height:205px;
@@ -32,6 +11,19 @@ body {
     -o-background-size:cover;
     background-size:cover;
 }
+h1 {
+    margin: auto;
+    color: #c5a716;
+    font-size: 50pt;
+    -webkit-text-stroke: 1px #5d3927;
+}
+h2 {
+    margin: auto;
+    color: #ffffff;
+    background-color: rgb(200,173,22, 0.6);
+    border-radius: 5px;
+}
+
 figure {
     display: inline-block;
     justify-content: space-around;
