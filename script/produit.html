@@ -28,7 +28,7 @@
         body {
             text-align: center;
             margin: auto;
-            background-image: url("picture.jpg"); 
+            background-image: url("fond.png"); 
             background-color: #cccccc; 
             height: 500px; 
             background-position: center; 
@@ -45,14 +45,39 @@
     <fieldset>
         <legend>FFPN, nos produits:</legend>
       <h1>Panier pique-nique</h1>
-      <img src="vin-pique-nique.jpg" width="300" height="200" alt="A 300x200 image"/>
+      <img src="panier_repas.png" width="300" height="200" alt="A 300x200 image"/>
         <h2>40 euros</h2>
-       
-        <button onclick="window.location.href = 'https://www.ffaperitif.com/boutique/le-coffret-chicandier-x-ffa/';" id="ajouter au panier">Ajouter au panier</button>
-
+                
+    <script language="javascript">
+        function swap() {
+          monImage = document.getElementById("monImage" );
+         
+          if (monImage.style.display != "none" ) {
+                monImage.style.display = "none";
+            } else {
+                monImage.style.display = "block";
+          }
+        }
+        </script>
+            <button href=# onclick='swap();'  id="ajouter au panier">Ajouter au panier</button>
+            <img src="panier_repas.png" id="monImage" />
+        
 
 
         </form>
     </fieldset>
+    
+    <aside>
+        <h2>En relation</h2>
+        <ul>
+          <li><a href="#">Combien j'aime être près des rivages</a></li>
+          <li><a href="#">Combien j'aime être près de la mer</a></li>
+          <li><a href="#">Bien que dans le nord de l'Angleterre</a></li>
+          <li><a href="#">Il n'arrête jamais de pleuvoir</a></li>
+          <li><a href="#">Eh bien…</a></li>
+        </ul>
+      </aside>
+
+
 
 </body>
