@@ -6,6 +6,7 @@ h1 {
 h2 {
     text-align: center;
     color: white;
+    font-size: 25pt;
 }
 tr {
     text-align: center;
@@ -35,4 +36,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+button {
+    font-size: x-large;
+}
+label {
+    font-size: x-large;
+}
+input {
+    font-size: x-large;
 }
