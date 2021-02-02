@@ -7,8 +7,14 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
+<<<<<<< HEAD
             "name": "Open index.html",
             "file": "c:\\Users\\jules\\Documents\\GitHub\\Projet_IHM\\script\\index.html"
+=======
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+>>>>>>> e532170a2866e61934647b3dec2f62cd2600254b
         }
     ]
 }

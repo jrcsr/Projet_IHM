@@ -1,3 +1,9 @@
+@use "@material/button";
+
+@include button.core-styles;
+@use "@material/card";
+
+@include card.core-styles;
 h1 {
     text-align: center;
     color: white;
@@ -14,8 +20,9 @@ tr {
 
 label {
     display: block;
+    display: inline;
     font: 1rem 'Fira Sans', sans-serif;
-    text-align: center;
+    text-align: left;
     color: white;
 }
 body {
@@ -35,4 +42,14 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+div{
+    color: white;
+}
+.produits {
+    text-align: center;
+}
+.boutonpaie {
+    display: block;
+    margin: auto;
 }
