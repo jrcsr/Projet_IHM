@@ -8,7 +8,16 @@
     </head>
     <body>
             <h1>Mon panier</h1>
-            <button onclick="window.location.href = 'index.html';" id="mon panier est vide">Remplir mon panier</button>
+            <div class="container">
+                <button onclick="window.location.href = 'index.html';" id="mon panier est vide">Mon panier est vide</button>
+                <button class="button3" onclick="document.getElementById('css').href='C:/Users/jules/Documents/GitHub/Projet_IHM/style/style_panier2.css';">
+                    Zoom +
+                </button>
+            
+                <button class="button4" onclick="document.getElementById('css').href='C:/Users/jules/Documents/GitHub/Projet_IHM/style/style_panier1.css';">
+                    Zoom -
+                </button>
+            </div>
             <h2><tr>Article </tr><tr>Prix </tr><tr>Quantité </tr></h2>
             <label for="product">Nombre de produit (0-100):</label>
             <input type="number" id="product" name="product" min="0" max="100">
