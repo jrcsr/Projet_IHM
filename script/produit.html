@@ -38,6 +38,7 @@
         button{
             background-color: rgb(66, 184, 129);
         }
+        #side{position: absolute;right: 10; width: 200px; height: 200px; background: #ddd;}
     </style>
 </head> 
 <body>
@@ -48,36 +49,36 @@
       <img src="panier_repas.png" width="300" height="200" alt="A 300x200 image"/>
         <h2>40 euros</h2>
                 
-    <script language="javascript">
-        function swap() {
-          monImage = document.getElementById("monImage" );
-         
-          if (monImage.style.display != "none" ) {
-                monImage.style.display = "none";
-            } else {
-                monImage.style.display = "block";
-          }
-        }
-        </script>
+
             <button href=# onclick='swap();'  id="ajouter au panier">Ajouter au panier</button>
-            <img src="panier_repas.png" id="monImage" />
+            
         
+            <side>
+                <h2>Panier:</h2>
+                <ul>
+                    <script language="javascript">
+                        function swap() {
+                          monImage = document.getElementById("monImage" );
+                         
+                          if (monImage.style.display != "none" ) {
+                                monImage.style.display = "none";
+                            } else {
+                                monImage.style.display = "block";
+                          }
+                        }
+                        </script>
+                        <img src="panier_repas.png" id="monImage" width="150" height="100" alt="A 150x100 image"/>
+                </ul>
+              </side>
 
 
         </form>
     </fieldset>
-    
-    <aside>
-        <h2>En relation</h2>
-        <ul>
-          <li><a href="#">Combien j'aime être près des rivages</a></li>
-          <li><a href="#">Combien j'aime être près de la mer</a></li>
-          <li><a href="#">Bien que dans le nord de l'Angleterre</a></li>
-          <li><a href="#">Il n'arrête jamais de pleuvoir</a></li>
-          <li><a href="#">Eh bien…</a></li>
-        </ul>
-      </aside>
 
 
+
+      <footer>
+        <p>FFPN | Le meilleur sinon rien</p>
+      </footer>
 
 </body>

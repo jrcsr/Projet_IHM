@@ -7,6 +7,7 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             "name": "Open index.html",
             "file": "c:\\Users\\jules\\Documents\\GitHub\\Projet_IHM\\script\\index.html"
@@ -15,6 +16,10 @@
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
 >>>>>>> e532170a2866e61934647b3dec2f62cd2600254b
+=======
+            "name": "Open index.html",
+            "url": "c:\\Users\\nilsc\\OneDrive\\Documents\\GitHub\\Projet_IHM\\script\\index.html",
+>>>>>>> Stashed changes
         }
     ]
 }
