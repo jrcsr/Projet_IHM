@@ -13,9 +13,9 @@ body {
 }
 h1 {
     margin: auto;
-    color: rgb(228, 130, 74);
+    color: rgb(200,173,22);
     font-size: 50pt;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -webkit-text-stroke: 1px rgb(93,57,39);
 }
 h2 {
     margin: auto;
