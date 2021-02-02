@@ -137,27 +137,11 @@
                         </button>
                     </div>
                 </figure>
-                <div class="mdc-card__actions">
-                    <button class="mdc-button mdc-card__action mdc-card__action--button">
-                      <div class="mdc-button__ripple"></div>
-                      <span class="mdc-button__label">Action 1</span>
-                    </button>
-                    <button class="mdc-button mdc-card__action mdc-card__action--button">
-                      <div class="mdc-button__ripple"></div>
-                      <span class="mdc-button__label">Action 2</span>
-                    </button>
-                </div>
             </div>
         </section>
     </body>
     <script>
         import {MDCRipple} from '@material/ripple';
         const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));  
-        
-        import {MDCRipple} from '@material/ripple';
-        const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
-        const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
-        return new MDCRipple(el);
-        });  
     </script>
 </html>
