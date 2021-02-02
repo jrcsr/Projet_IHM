@@ -2,41 +2,49 @@
 <html lang="fr">
     <meta charset="UTF-8">
     <title>FFPN | Log In</title>
-    <link rel="stylesheet" href="style.css" />
-
+    <link id="css" rel="stylesheet" type="text/css" href="C:/Users/jules/Documents/GitHub/Projet_IHM/style/style_login1.css"/>
 </head>
-<style>
-    legend {
-        text-align: center;
-        color: rgb(6, 6, 53);
-    }
-  
-    body {
-        background-image: url("vin-pique-nique.jpg"); 
-        background-color: #cccccc; 
-        height: 500px; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-        background-size: cover; 
-    }
-</style>
 
 <body>
-    
     <fieldset>
         <legend>FFPN, La fédération française de pique-nique.</legend>
-        <legend> </legend>
-        <legend>Inscrivez vous:</legend>
-        <legend> </legend>
+        <div class="zoom">
+            <button  onclick="document.getElementById('css').href='C:/Users/jules/Documents/GitHub/Projet_IHM/style/style_login2.css';">
+                Zoom +
+            </button>
+        
+            <button  onclick="document.getElementById('css').href='C:/Users/jules/Documents/GitHub/Projet_IHM/style/style_login1.css';">
+                Zoom -
+            </button>
+        </div>
+        <div class="text">
+            <span>Inscrivez vous:</span>
+        </div>
         <form onsubmit="new FormData(this); return false;">
-
-        <label for="email">Email:</label>
-        <input id="email" type="email" name="email" placeholder="votre email"/>
-        <label for="password">Mot de passe:</label>
-        <input id="password" type="password" name="password" placeholder="votre mot de passe"/>
-        <input type="submit" value="Enregistrer"/>
-
+            <div class="entree">
+                <label for="nom">Nom:</label>
+                <input id="nom" type="nom" name="nom" placeholder="Votre nom"/>
+            </div>
+            <div class="entree">
+                <label for="prénom">Prénom:</label>
+                <input id="prénom" type="prénom" name="prénom" placeholder="Votre prénom"/>
+            </div>
+            <div class="entree">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="votre email"/>
+            </div>
+            <div class="entree">
+                <label for="password">Mot de passe:</label>
+                <input id="password" type="password" name="password" placeholder="Votre mot de passe"/>
+            </div>
+            <div class="entree">
+                <label for="password">Confirmer votre mot de passe:</label>
+                <input id="password" type="password" name="password" placeholder="Votre mot de passe"/>
+            </div>
+            <input id="save" type="submit" value="Enregistrer"/>
         </form>
     </fieldset>
-
+<div class="panier">
+    <button onclick="window.location.href = 'index.html';" id="panier">Accueil</button>
+</div>
 </body>

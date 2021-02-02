@@ -1,0 +1,62 @@
+legend {
+    text-align: center;
+    color: rgb(6, 6, 53);
+}
+form {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#save {
+    margin-top: 50px;
+}
+.entree {
+    margin-top: 15px;
+
+}
+span {
+    max-width: 160px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    font-size: 20pt;
+    border-radius: 10px;
+    background-color: rgb(84,132,59, 0.6);
+}
+body {
+    font-family: 'Calibri',sans-serif ;
+    height:205px;
+    width: 100%; /* fall back */
+    width: 100vw;
+    background-position:left top;
+    background-image:url(vin-pique-nique.jpg);
+    background-repeat:repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+fieldset {
+    margin: 0%;
+}
+legend {
+    font-size: 20pt;
+}
+.panier {
+    text-align: center;
+    margin-top: 15px;
+}
+.zoom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+label {
+    border-radius: 5px;
+    background-color: rgb(84,132,59, 0.6);
+}
+.text {
+    text-align: center;
+}
