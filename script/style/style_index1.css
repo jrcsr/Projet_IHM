@@ -55,7 +55,9 @@ img {
 }
 
 .containerimg {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 button:active {
     background-color: green;
@@ -63,7 +65,7 @@ button:active {
 button {
     margin-bottom: 10px;
 }
-}
+
 .produits {
     text-align: center;
 }
@@ -97,12 +99,24 @@ li {
 figcaption {
     margin-bottom: 10px;
     text-transform: uppercase;
-    background-color: rgb(250, 128, 114, 0.3);    
+    background-color: rgb(250, 128, 114, 0.4); 
+    height: fit-content;
+    width: fit-content;  
+    border-radius: 4px;
 }
 * {
     --mdc-theme-primary: #51b364;
     --mdc-theme-on-primary: #ffffff;
 }
+aside {
+    padding-right: .5rem;
+    margin-right: .5rem;
+    float: left;
+}
+section > article.article {
+    margin: .5rem;
+}
+
 
 
 
