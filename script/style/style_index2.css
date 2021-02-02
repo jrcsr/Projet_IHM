@@ -1,10 +1,16 @@
+@use "@material/button";
+
+@include button.core-styles;
+@use "@material/card";
+
+@include card.core-styles;
 body {
     font-family: 'Calibri', sans-serif;
     height:205px;
     width: 100%; /* fall back */
     width: 100vw;
     background-position:left top;
-    background-image:url(forest.jpg);
+    background-image:url(fond.png);
     background-repeat:repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -27,7 +33,6 @@ h2 {
 figure {
     display:inline-block;
     justify-content: space-around;
-    background-color: rgb(154, 205, 50, 0.6);
     width:fit-content;
     margin-left: auto;
     margin-right: auto;  
@@ -63,12 +68,8 @@ section {
 .produits {
     text-align: center;
 }
-button {
-    font-size: x-large;
-    margin-bottom: 10px;
-}
+
 nav {
-    margin-top: 10px;
     width: 150px;
     float: left;
     display: inline;
@@ -88,11 +89,18 @@ nav {
     font-size: x-large;
 }
 ul {
-    margin-top: 10px;
+    margin-top: 50px;
     text-align: center;
     list-style: none;
     padding: 0;
 }
+li {
+    margin-top: 25px;
+}
+figcaption {
+    margin-bottom: 10px;
+}
+
 
 
 
