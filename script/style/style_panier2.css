@@ -73,7 +73,6 @@ fieldset {
     background-color: rgb(197, 80, 22,0.4);
 }
 .mdc-button--raised.mdc-button--raised {
-    height: fit-content;
     width: fit-content;
 }
 * {

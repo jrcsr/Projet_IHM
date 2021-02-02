@@ -47,11 +47,19 @@
                 </figure>
             <label for="product">Nombre de produit (0-10) :</label>
             <input type="number" id="product" name="product" min="0" max="10" value="1">
-            <input type="button" class="bouton1" value="Supprimer" onclick="delete Panier">
+            <button type="button" class="mdc-button mdc-button--raised" onclick="delete Panier">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">delete</i>
+                <span class="mdc-button__label">Supprimer</span>
+            </button>
             <br><br>
             <h2>Prix total : 20 €</h2>
             <br><br>
-            <button class="boutonpaie" onclick="window.location.href = 'https://www.amazon.fr/';" id="passer la commande">Passer la commande</button>
+            <button class="mdc-button mdc-button--raised" onclick="window.location.href = 'https://www.amazon.fr/';" id="passer la commande">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">store</i>
+                <span class="mdc-button__label">Passer la commande</span>
+            </button>
             <br><br><br>
         </body>
         <script>

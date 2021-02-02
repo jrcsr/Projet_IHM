@@ -105,6 +105,7 @@ figcaption {
     text-transform: uppercase;
 }
 .mdc-button--raised.mdc-button--raised {
+
     height: fit-content;
     width: fit-content;
 }
