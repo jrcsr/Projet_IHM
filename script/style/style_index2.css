@@ -37,6 +37,8 @@ figure {
     width:fit-content;
     margin-left: auto;
     margin-right: auto;  
+    border: 1px solid salmon;
+    border-radius: 90px;
                  
 }
 fieldset {
@@ -100,6 +102,7 @@ li {
 }
 figcaption {
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 

@@ -1,7 +1,8 @@
-@use "@material/button";
+@import "@material/button";
 @include button.core-styles;
-@use "@material/icon-button";
-@use "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/icon-button";
+@import "@material/top-app-bar/mdc-top-app-bar";
+
 
 @include icon-button.core-styles;
 
@@ -36,7 +37,9 @@ figure {
     justify-content: space-around;
     width: fit-content;
     margin-left: auto;
-    margin-right: auto;                
+    margin-right: auto;   
+    border: 1px solid salmon;
+    border-radius: 90px;             
 }
 fieldset {
     display: flex;
@@ -95,8 +98,12 @@ li {
 }
 figcaption {
     margin-bottom: 10px;
-    text-transform: capitalize;    
+    text-transform: uppercase;    
 }
+.mdc-button--raised.mdc-button--raised {
+    background-color: #51b364;
+}
+
 
 
 

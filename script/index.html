@@ -3,15 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link id="css" rel="stylesheet" type="text/css" href="style/style_index1.css"/>
         <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script type="module">
+            import {MDCTopAppBar} from '@material/top-app-bar/index';
+            import {MDCRipple} from '@material/ripple';
+        </script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link id="css" rel="stylesheet" type="text/css" href="style/style_index1.css"/>
         <title >FFPN | Accueil</title>
     </head>
     <body>
         <fieldset>
-            
             <h1>Fédération Française du Pique-Nique</h1>
             <h2><i>Votre compagnon pour vos balade en extérieur</i></h2>       
         </fieldset>
@@ -141,10 +144,7 @@
         </section>
     </body>
     <script>
-        import {MDCRipple} from '@material/ripple';
         const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));  
-        
-        import {MDCTopAppBar} from '@material/top-app-bar';
         const topAppBarElement = document.querySelector('.mdc-top-app-bar');
         const topAppBar = new MDCTopAppBar(topAppBarElement);
     </script>
