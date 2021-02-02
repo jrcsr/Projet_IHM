@@ -63,8 +63,6 @@ button:active {
 button {
     margin-bottom: 10px;
 }
-section {
-    text-align: center;
 }
 .produits {
     text-align: center;
@@ -98,10 +96,12 @@ li {
 }
 figcaption {
     margin-bottom: 10px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    background-color: rgb(250, 128, 114, 0.3);    
 }
-.mdc-button--raised.mdc-button--raised {
-    background-color: #51b364;
+* {
+    --mdc-theme-primary: #51b364;
+    --mdc-theme-on-primary: #ffffff;
 }
 
 

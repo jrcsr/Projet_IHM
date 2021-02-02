@@ -61,3 +61,7 @@ fieldset {
     align-items: center;
     background-color: rgb(197, 80, 22,0.4);
 }
+* {
+    --mdc-theme-primary: #51b364;
+    --mdc-theme-on-primary: #ffffff;
+}

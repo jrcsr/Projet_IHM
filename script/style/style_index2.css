@@ -104,6 +104,17 @@ figcaption {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+.mdc-button--raised.mdc-button--raised {
+    height: fit-content;
+    width: fit-content;
+}
+* {
+    --mdc-theme-primary: #51b364;
+    --mdc-theme-on-primary: #ffffff;
+}
+.mdc-button__label.mdc-button__label {
+    font-size: x-large;
+}
 
 
 

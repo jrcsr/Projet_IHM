@@ -4,6 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link id="css" rel="stylesheet" type="text/css" href="style/style_panier1.css"/>
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script type="module">
+            import {MDCTopAppBar} from '@material/top-app-bar/index';
+            import {MDCRipple} from '@material/ripple';
+        </script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Panier</title>
     </head>
     <body>
@@ -12,13 +19,20 @@
         </fieldset>
             <br><br>
             <div class="container">
-                <button onclick="window.location.href = 'index.html';" id="accueil">Accueil</button>
-                <button class="button3" onclick="document.getElementById('css').href='style/style_panier2.css';">
-                    Zoom +
+                <button class="mdc-button mdc-button--raised" onclick="window.location.href='index.html'">
+                    <div class="mdc-button__ripple"></div>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">home</i>
+                    <span class="mdc-button__label">Accueil</span>
                 </button>
-            
-                <button class="button4" onclick="document.getElementById('css').href='style/style_panier1.css';">
-                    Zoom -
+                <button class="mdc-button mdc-button--raised" onclick="document.getElementById('css').href='style/style_panier2.css';">
+                    <div class="mdc-button__ripple"></div>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">zoom_in</i>
+                    <span class="mdc-button__label">Zoom +</span>
+                </button>
+                <button class="mdc-button mdc-button--raised" onclick="document.getElementById('css').href='style/style_panier1.css';">
+                    <div class="mdc-button__ripple"></div>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">zoom_in</i>
+                    <span class="mdc-button__label">Zoom -</span>
                 </button>
             </div>
             <br><br>
@@ -40,4 +54,9 @@
             <button class="boutonpaie" onclick="window.location.href = 'https://www.amazon.fr/';" id="passer la commande">Passer la commande</button>
             <br><br><br>
         </body>
+        <script>
+            const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));  
+            const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+            const topAppBar = new MDCTopAppBar(topAppBarElement);
+        </script>
 </html>
