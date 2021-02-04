@@ -19,49 +19,53 @@
             <h1>Fédération Française du Pique-Nique</h1>
             <h2><i>Votre compagnon pour vos balades en extérieur</i></h2>       
         </fieldset>
-            <div class="zoom">
-                <button class="mdc-button mdc-button--raised" onclick="document.getElementById('css').href='style/style_login2.css';">
-                    <div class="mdc-button__ripple"></div>
-                    <i class="material-icons mdc-button__icon" aria-hidden="true">zoom_in</i>
-                    <span class="mdc-button__label">Zoom +</span>
-                </button>
-            
-                <button class="mdc-button mdc-button--raised" onclick="document.getElementById('css').href='style/style_login1.css';">
-                    <div class="mdc-button__ripple"></div>
-                    <i class="material-icons mdc-button__icon" aria-hidden="true">zoom_out</i>
-                    <span class="mdc-button__label">Zoom -</span>
-                </button>
+        <div class="zoom">
+            <button class="mdc-button mdc-button--raised" onclick="document.getElementById('css').href='style/style_login2.css';">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">zoom_in</i>
+                <span class="mdc-button__label">Zoom +</span>
+            </button>
+        
+            <button class="mdc-button mdc-button--raised" onclick="document.getElementById('css').href='style/style_login1.css';">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">zoom_out</i>
+                <span class="mdc-button__label">Zoom -</span>
+            </button>
+        </div>
+        <div class="text">
+            <span class="int">Inscrivez vous:</span>
+        </div>
+        <form class="go-right">
+            <div>
+                <input id="nom" name="nom" type="text" required>
+                <label for="nom">Votre NOM</label>
             </div>
-            <div class="text">
-                <span class="int">Inscrivez vous:</span>
+            <div>
+                <input id="prénom" name="prénom" type="text" required>
+                <label for="prénom">Votre PRÉNOM</label>
             </div>
-            <form onsubmit="new FormData(this); return false;">
-                <div class="entree">
-                    <label for="nom">Nom:</label>
-                    <input id="nom" type="nom" name="nom" placeholder="Votre nom"/>
-                </div>
-                <div class="entree">
-                    <label for="prénom">Prénom:</label>
-                    <input id="prénom" type="prénom" name="prénom" placeholder="Votre prénom"/>
-                </div>
-                <div class="entree">
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" name="email" placeholder="Votre email"/>
-                </div>
-                <div class="entree">
-                    <label for="password">Mot de passe:</label>
-                    <input id="password" type="password" name="password" placeholder="Votre mot de passe"/>
-                </div>
-                <div class="entree">
-                    <label for="password">Confirmer votre mot de passe:</label>
-                    <input id="password" type="password" name="password" placeholder="Confirmer mot de passe"/>
-                </div>
-                <button id="save" type="submit" class="mdc-button mdc-button--raised">
-                    <div class="mdc-button__ripple"></div>
-                    <i class="material-icons mdc-button__icon" aria-hidden="true">save</i>
-                    <span class="mdc-button__label">Enregistrer</span>
-                </button>
-            </form>
+            <div>
+                <input id="email" name="email" required>
+                <label for="email">Votre EMAIL</label>
+            </div>
+            <div>
+                <input id="mdp" name="mdp" required>
+                <label for="mdp">Votre MOT DE PASSE</label>
+            </div>
+            <div>
+                <input id="mdp" name="mdp" required>
+                <label for="mdp">Confirmez votre MOT DE PASSE</label>
+            </div>
+            <div>
+                <input id="phone" name="phone" type="tel" required>
+                <label for="phone">Votre numéro de téléphone</label>
+            </div>
+            <button id="save" type="submit" class="mdc-button mdc-button--raised">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">save</i>
+                <span class="mdc-button__label">Enregistrer</span>
+            </button>
+        </form>
         <div class="panier">
             <button class="mdc-button mdc-button--raised" onclick="window.location.href='index.html'">
                 <div class="mdc-button__ripple"></div>
