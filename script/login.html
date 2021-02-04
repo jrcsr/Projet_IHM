@@ -49,16 +49,30 @@
                 <label for="email">Votre EMAIL</label>
             </div>
             <div>
-                <input id="mdp" name="mdp" required>
+                <input type="password" id="password" required>
                 <label for="mdp">Votre MOT DE PASSE</label>
             </div>
             <div>
-                <input id="mdp" name="mdp" required>
-                <label for="mdp">Confirmez votre MOT DE PASSE</label>
+                <input type="password" id="confirm_password" required>
+                <label for="mdp2">Confirmez votre MOT DE PASSE</label>
             </div>
+            <script>
+                var password = document.getElementById("password"), confirm_password = document.getElementById("confirm_password");
+    
+                function validatePassword(){
+                if(password.value != confirm_password.value) {
+                    confirm_password.setCustomValidity("Passwords Don't Match");
+                } else {
+                    confirm_password.setCustomValidity('');
+                }
+                }
+    
+                password.onchange = validatePassword;
+                confirm_password.onkeyup = validatePassword;
+            </script>
             <div>
                 <input id="phone" name="phone" type="tel" required>
-                <label for="phone">Votre numéro de téléphone</label>
+                <label for="phone">Votre numéro de TÉLÉPHONE</label>
             </div>
             <button id="save" type="submit" class="mdc-button mdc-button--raised">
                 <div class="mdc-button__ripple"></div>
