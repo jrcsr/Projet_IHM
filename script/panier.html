@@ -49,7 +49,7 @@
                 </figure>
             <label for="product">Nombre de produit (0-10) :</label>
             <input type="number" id="product" name="product" min="0" max="10" value="1">
-            <button type="button" class="mdc-button mdc-button--raised" onclick="delete Panier">
+            <button type="button" class="mdc-button mdc-button--raised" onclick="document.getElementById('product').value = '0'">
                 <div class="mdc-button__ripple"></div>
                 <i class="material-icons mdc-button__icon" aria-hidden="true">delete</i>
                 <span class="mdc-button__label">Supprimer</span>
