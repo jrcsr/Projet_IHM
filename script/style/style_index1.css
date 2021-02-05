@@ -1,15 +1,8 @@
 body {
     font-family: 'Calibri', sans-serif;
-    height:205px;
-    width: 100%; /* fall back */
-    width: 100vw;
-    background-position:left top;
     background-image:url(fond.png);
-    background-repeat:repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
     background-size:cover;
+    background-attachment: scroll;
 }
 h1 {
     margin: auto;
@@ -30,8 +23,12 @@ figure {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;   
-    border: 1px solid salmon;
-    border-radius: 90px;             
+    border: 1px solid rgb(19, 65, 1);
+    border-radius: 90px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(23, 77, 4, 0.692)           
+}
+figure + figure {
+    margin-left: 25px;
 }
 fieldset {
     display: flex;
@@ -64,9 +61,7 @@ img {
     flex-direction: column;
     align-items: center;
 }
-.containerimg > .d_button {
-    flex-direction: row;
-}
+
 .containerimg > .d_button > #direct {
     width: 100px;
 }
@@ -114,14 +109,16 @@ figcaption {
     margin-bottom: 10px;
     text-transform: uppercase;
     background-color: rgb(250, 128, 114, 0.4); 
-    height: fit-content;
-    width: fit-content;  
+    height: 25px;
+    width: 90%;  
     border-radius: 4px;
+    font-weight: bold;
 }
 * {
-    --mdc-theme-primary: #51b364;
+    --mdc-theme-primary: #eeaf3ac0;
     --mdc-theme-on-primary: #ffffff;
 }
+
 section > article.article {
     margin: .5rem;
 }
@@ -132,9 +129,13 @@ section > article.article {
     height: 200px;
 }
 figure > .containerimg > .prix {
-    background-color: rgb(250, 128, 114, 0.4); 
+    background-color: rgba(96, 205, 238, 0.6); 
     margin-bottom: 10px;
     font-size: 20pt;
+    color: white;
+    border-radius: 4px;
+    border: 3px solid rgba(3, 51, 3, 0.6);
+    width: 40%;
 }
 
 

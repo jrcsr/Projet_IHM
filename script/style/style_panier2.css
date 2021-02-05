@@ -1,6 +1,12 @@
 @use "@material/button";
 
 @include button.core-styles;
+body {
+    font-family: 'Calibri', sans-serif;
+    background-image:url(fond.png);
+    background-size:cover;
+    text-align: center;
+}
 h1 {
     margin: auto;
     color: #c5a716;
@@ -34,19 +40,7 @@ label {
     text-align: left;
     color: rgb(0, 0, 0);
 }
-body {
-    font-family: 'Calibri', sans-serif;
-    height:205px;
-    width: 100%; /* fall back */
-    width: 100vw;
-    background-position:left top;
-    background-image:url(fond.png);
-    background-repeat:repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-}
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -85,7 +79,7 @@ fieldset {
     width: fit-content;
 }
 * {
-    --mdc-theme-primary: #51b364;
+    --mdc-theme-primary: #eeaf3ac0;
     --mdc-theme-on-primary: #ffffff;
 }
 .mdc-button__label.mdc-button__label {
@@ -98,6 +92,7 @@ figcaption {
     height: fit-content;
     width: fit-content;  
     border-radius: 4px;
+    
 }
 input {
     font-size: x-large;

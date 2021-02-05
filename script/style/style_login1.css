@@ -1,14 +1,6 @@
 body {
     font-family: 'Calibri',sans-serif ;
-    height:205px;
-    width: 100%; /* fall back */
-    width: 100vw;
-    background-position:left top;
     background-image:url(fond.png);
-    background-repeat:repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
     background-size:cover;
     text-align: center;
 }
@@ -58,7 +50,7 @@ fieldset {
 }
 
 * {
-    --mdc-theme-primary: #51b364;
+    --mdc-theme-primary: #eeaf3ac0;
     --mdc-theme-on-primary: #ffffff;
 }
 .zoom {
