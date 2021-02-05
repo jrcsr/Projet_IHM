@@ -131,6 +131,11 @@ section > article.article {
     width: 200px;
     height: 200px;
 }
+figure > .containerimg > .prix {
+    background-color: rgb(250, 128, 114, 0.4); 
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
 
 
 

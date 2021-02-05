@@ -107,7 +107,7 @@ overflow: hidden;
 form input, form textarea {
 width: 100%;
 border: 2px solid rgb(0, 0, 0);
-background: none;
+background: rgb(255, 255, 255, 0.2);
 position: relative;
 top: 0;
 left: 0;

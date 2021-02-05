@@ -68,6 +68,13 @@ img {
     align-items: center;
     font-size: 22pt;
 }
+.containerimg > .d_button {
+    flex-direction: row;
+}
+.containerimg > .d_button > #direct {
+    width: 150px;
+    height: fit-content;
+}
 button:active {
     background-color: green;
 }
@@ -115,10 +122,9 @@ figcaption {
     border-radius: 4px;
 }
 .mdc-button--raised.mdc-button--raised {
-
     width: fit-content;
-    
 }
+
 nav > ul > li > .mdc-button--raised.mdc-button--raised {
     height: 60px;
 }
@@ -133,6 +139,11 @@ nav > ul > li > .mdc-button--raised.mdc-button--raised {
     margin-left: 10%;
     width: 200px;
     height: 200px;
+}
+figure > .containerimg > .prix {
+    background-color: rgb(250, 128, 114, 0.4); 
+    margin-bottom: 10px;
+    font-size: 30pt;
 }
 
 
