@@ -51,6 +51,12 @@ img {
     flex-direction: column;
     align-items: center;
 }
+.containerimg > .d_button {
+    flex-direction: row;
+}
+.containerimg > .d_button > #direct {
+    width: 100px;
+}
 button:active {
     background-color: green;
 }
@@ -117,6 +123,7 @@ li.iframe {
     width: 250px;
     height: 250px;
 }
+
 
 
 
