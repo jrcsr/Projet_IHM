@@ -73,6 +73,8 @@ body > fieldset >.img {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 .int {
     border-radius: 3px;
@@ -92,6 +94,7 @@ form {
 width: 320px;
 float: center;
 margin: 20px;
+
 }
 form > div {
 position: relative;
@@ -144,4 +147,12 @@ padding-top: 5px;
 }
 form.go-right {
     display: inline-block;
+}
+.formulaires {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
 }

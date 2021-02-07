@@ -99,6 +99,17 @@ body > fieldset >.img {
 .mdc-button__label.mdc-button__label {
     font-size: x-large;
 }
+.mdc-button__icon.mdc-button__icon {
+    font-size: 20pt;
+}
+i.material-icons.mdc-button__icon {
+    margin-left: -10%;
+    margin-top: -5%;
+}
+span.mdc-button__label {
+    margin-left: 5%;
+    margin-right: -10%
+}
 figcaption {
     margin-bottom: 10px;
     text-transform: uppercase;

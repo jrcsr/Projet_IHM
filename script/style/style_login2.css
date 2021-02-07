@@ -66,16 +66,23 @@ button {
 .text {
     text-align: center;
 }
-.mdc-button--raised.mdc-button--raised {
-
-    width: fit-content;
-}
 * {
     --mdc-theme-primary: #eeaf3ac0;
     --mdc-theme-on-primary: #ffffff;
 }
 .mdc-button__label.mdc-button__label {
     font-size: x-large;
+}
+.mdc-button__icon.mdc-button__icon {
+    font-size: 20pt;
+}
+i.material-icons.mdc-button__icon {
+    margin-left: -10%;
+    margin-top: -5%;
+}
+span.mdc-button__label {
+    margin-left: 5%;
+    margin-right: -10%
 }
 .zoom {
     margin-top: 1%;
@@ -163,5 +170,22 @@ form.go-right {
 }
 label {
     font-size: x-large;
+}
+.formulaires {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.zoom {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 

@@ -18,7 +18,7 @@
         <fieldset>
             <img class="img" src="style/lunchbox_color-512.png" alt="logo">
             <span>
-                <h1>Inscrivez-vous</h1>
+                <h1>Inscrivez-vous / Connectez-vous</h1>
                 <h2><i>Fédération française du pique-nique</i></h2>       
             </span>
         </fieldset>
@@ -35,51 +35,68 @@
                 <span class="mdc-button__label">Zoom -</span>
             </button>
         </div>
-        <form class="go-right">
-            <div>
-                <input id="nom" name="nom" type="text" required>
-                <label for="nom">Votre NOM</label>
-            </div>
-            <div>
-                <input id="prénom" name="prénom" type="text" required>
-                <label for="prénom">Votre PRÉNOM</label>
-            </div>
-            <div>
-                <input id="email" name="email" required>
-                <label for="email">Votre EMAIL</label>
-            </div>
-            <div>
-                <input type="password" id="password" required>
-                <label for="mdp">Votre MOT DE PASSE</label>
-            </div>
-            <div>
-                <input type="password" id="confirm_password" required>
-                <label for="mdp2">Confirmez votre MOT DE PASSE</label>
-            </div>
-            <script>
-                var password = document.getElementById("password"), confirm_password = document.getElementById("confirm_password");
-    
-                function validatePassword(){
-                if(password.value != confirm_password.value) {
-                    confirm_password.setCustomValidity("Passwords Don't Match");
-                } else {
-                    confirm_password.setCustomValidity('');
-                }
-                }
-    
-                password.onchange = validatePassword;
-                confirm_password.onkeyup = validatePassword;
-            </script>
-            <div>
-                <input id="phone" name="phone" type="tel" required>
-                <label for="phone">Votre numéro de TÉLÉPHONE</label>
-            </div>
-            <button id="save" type="submit" class="mdc-button mdc-button--raised">
-                <div class="mdc-button__ripple"></div>
-                <i class="material-icons mdc-button__icon" aria-hidden="true">save</i>
-                <span class="mdc-button__label">Enregistrer</span>
-            </button>
-        </form>
+        <div class="formulaires">
+            <form class="go-right">
+                <div>
+                    <input id="nom" name="nom" type="text" required>
+                    <label for="nom">Votre NOM</label>
+                </div>
+                <div>
+                    <input id="prénom" name="prénom" type="text" required>
+                    <label for="prénom">Votre PRÉNOM</label>
+                </div>
+                <div>
+                    <input id="email" name="email" required>
+                    <label for="email">Votre EMAIL</label>
+                </div>
+                <div>
+                    <input type="password" id="password" required>
+                    <label for="mdp">Votre MOT DE PASSE</label>
+                </div>
+                <div>
+                    <input type="password" id="confirm_password" required>
+                    <label for="mdp2">Confirmez votre MOT DE PASSE</label>
+                </div>
+                <script>
+                    var password = document.getElementById("password"), confirm_password = document.getElementById("confirm_password");
+        
+                    function validatePassword(){
+                    if(password.value != confirm_password.value) {
+                        confirm_password.setCustomValidity("Passwords Don't Match");
+                    } else {
+                        confirm_password.setCustomValidity('');
+                    }
+                    }
+        
+                    password.onchange = validatePassword;
+                    confirm_password.onkeyup = validatePassword;
+                </script>
+                <div>
+                    <input id="phone" name="phone" type="tel" required>
+                    <label for="phone">Votre numéro de TÉLÉPHONE</label>
+                </div>
+                <button id="save" type="submit" class="mdc-button mdc-button--raised">
+                    <div class="mdc-button__ripple"></div>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">save</i>
+                    <span class="mdc-button__label">Enregistrer</span>
+                </button>
+            </form>
+            <form class="go-right">
+                <div>
+                    <input id="email" name="email" required>
+                    <label for="email">Votre EMAIL</label>
+                </div>
+                <div>
+                    <input type="password" id="password" required>
+                    <label for="mdp">Votre MOT DE PASSE</label>
+                </div>
+                <button id="save" type="submit" class="mdc-button mdc-button--raised">
+                    <div class="mdc-button__ripple"></div>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">account_box</i>
+                    <span class="mdc-button__label">Connexion</span>
+                </button>
+            </form>
+        </div>
         <div class="panier">
             <button class="mdc-button mdc-button--raised" onclick="window.location.href='index.html'">
                 <div class="mdc-button__ripple"></div>

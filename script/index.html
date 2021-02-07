@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
         <script type="module">
             import {MDCTopAppBar} from '@material/top-app-bar/index';
@@ -51,6 +52,16 @@
                         <i class="material-icons mdc-button__icon" aria-hidden="true">zoom_out</i>
                         <span class="mdc-button__label">Zoom -</span>
                     </button>
+                </li>
+                <li>
+                    <div class="button">
+                        <div class="icons">
+                            <button class="floating-btn" onclick="myFunction()">
+                                <i class="fas fa-plus"></i>
+                                <span>NOUS CONTACTER</span>
+                            </button>
+                        </div>
+                    </div>
                 </li>
                 <li class="video">
                     <iframe width="300" height="250" src="https://www.youtube.com/embed/OdIJ2x3nxzQ?autoplay=1" allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -206,10 +217,67 @@
                 </figure>
             </div>
         </section>
+        <script>
+            const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));  
+            const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+            const topAppBar = new MDCTopAppBar(topAppBarElement);
+        </script>
+        <!--#########-->
+        <div style="display: none" class="form-box " id="myDIV">
+            <h2 class="login-header"><i class="far fa-comment-dots icon"></i>Faites nous une demande, nous y répondrons dans les plus brefs délais</h2>
+            <div class="test">
+                <form class="formInput">
+                    <div>
+                        <input type="text" required id="firstname">
+                        <label class="inputLabel">Nom</label>
+                    </div>
+                    <div>
+                        <input type="text" required id="surname">
+                        <label class="inputLabel">Prénom</label>
+                    </div>
+                    <div>
+                        <input type="text" id="numberText" required>
+                        <label class="inputLabel">Numéro de téléphone</label>
+                    </div>
+                    <div>
+                        <input type="text"  required>
+                        <label class="inputLabel">Message</label>
+                    </div>
+                    <div>
+                        <input type="file" id="inputFile" required><label id="labelFile" for="inputFile">
+                    <i class="far fa-file-image" id="iconPhoto"></i>Choisissez une photo</label>
+                    </div>
+            
+                    <p id="legal">En partageant votre numéro de téléphone avec nous,
+                        vous acceptez de recevoir des messages à ce numéro</p>
+                    <input type="submit" value="Envoyer" id="submitButt" class="active">
+                </form>
+            </div>
+            <div class="footer"></div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $('#submitButt').click(function() {
+                $(this).toggleClass('active');
+            });
+            $(function() {
+                $("#test").focus();
+            });
+            document.querySelector('.floating-btn').addEventListener('click', function(e) {
+                e.target.closest('button').classList.toggle('clicked');
+            });
+            
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                document.getElementById("test").focus();
+        
+            }
+            }
+        </script>
     </body>
-    <script>
-        const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));  
-        const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-        const topAppBar = new MDCTopAppBar(topAppBarElement);
-    </script>
 </html>
