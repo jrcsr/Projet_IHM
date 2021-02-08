@@ -1,5 +1,4 @@
-# Projet_IHM
-Projet FFPN Interface Homme-Machine
+# Projet Interface Homme-Machine
 
 # Membres de l'équipe
 CHARRIER Nils
