@@ -10,7 +10,7 @@ h1 {
     margin: auto;
     color: rgba(200, 173, 22);
     font-size: 50pt;
-    -webkit-text-stroke: 1px #afc9dc;
+    -webkit-text-stroke: 1px #5d3927;
 }
 h2 {
     margin: auto;
@@ -129,11 +129,10 @@ figcaption {
 section > article.article {
     margin: .5rem;
 }
-
-.video > iframe {
+.map > iframe {
     margin-left: 10%;
     width: 200px;
-    height: 200px;
+    height: 400px;
 }
 figure > .containerimg > .prix {
     background-color: rgba(96, 205, 238, 0.6); 
