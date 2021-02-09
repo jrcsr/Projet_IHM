@@ -6,9 +6,9 @@ body {
 }
 h1 {
     margin: auto;
-    color: #c5a716;
+    color: #87c3b8b3;
     font-size: 50pt;
-    -webkit-text-stroke: 1px #5d3927;
+    -webkit-text-stroke: 1px #110555;
 }
 h2 {
     margin: auto;
@@ -38,7 +38,7 @@ fieldset {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(197, 80, 22,0.4);
+    background-color: rgba(238, 175, 58, 0.4);
 }
 fieldset > span {
     flex-direction: column;
