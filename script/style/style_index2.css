@@ -55,6 +55,13 @@ body > fieldset >.img {
     height:175px;
     width: 175px;
 }
+body > fieldset > img.malvoyants {
+    position: fixed;
+    top: 0;
+    left: 1%;
+    height: 7.5%;
+    width: 3.75%;
+}
 img {
     width: min-content;
     margin-right: auto;

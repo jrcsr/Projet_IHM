@@ -79,6 +79,13 @@ body > fieldset >.img {
     margin-right: 5%;
     margin-left: 0;
 }
+body > fieldset > img.malvoyants {
+    position: fixed;
+    top: 0;
+    left: 1%;
+    height: 7.5%;
+    width: 3.75%;
+}
 * {
     --mdc-theme-primary: #eeaf3ac0;
     --mdc-theme-on-primary: #ffffff;
