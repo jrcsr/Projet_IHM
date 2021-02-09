@@ -36,6 +36,10 @@ figure {
     box-shadow: inset 19px 19px 38px rgb(119, 153, 92, 0.6),
             inset -19px -19px 38px rgb(157, 203, 122, 0.6);*/
 }
+figure > img.charcuterie {
+    height: 315px;
+    width: 500px;
+}
 figure + figure {
     margin-left: 25px;
 }
