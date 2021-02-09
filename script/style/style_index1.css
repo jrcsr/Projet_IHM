@@ -125,6 +125,10 @@ ul {
 li {
     margin-top: 25px;
 }
+li.map > small > a {
+    font-size: 15pt;
+}
+
 figcaption {
     margin-bottom: 10px;
     text-transform: uppercase;
